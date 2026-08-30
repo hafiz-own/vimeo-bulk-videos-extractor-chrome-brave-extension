@@ -434,14 +434,14 @@ async function updateUI() {
     if (isRecording) {
       statusDot.className = "status-dot recording";
       statusText.textContent = `Recording (${lastKnownState.recordedVideos.length} found)`;
-      recordBtn.textContent = "Stop & Copy";
+      recordBtn.textContent = "Stop Batch & Copy";
       recordBtn.className = "btn primary recording";
     } else {
       statusDot.className = "status-dot";
       statusText.textContent = lastKnownState.recordedVideos.length > 0
         ? `Recording stopped (${lastKnownState.recordedVideos.length} total)`
         : "Idle";
-      recordBtn.textContent = "Start Recording";
+      recordBtn.textContent = "Start Batch Capture";
       recordBtn.className = "btn primary";
     }
 
